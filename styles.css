@@ -1,3 +1,29 @@
+body{
+      padding: 0;
+      margin: 0;
+}
+
+
+nav{
+    background: grey;
+    /* height: 60px; */
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+nav a{
+      text-align: center;
+      color: white;
+      font-size: 1.5em;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
 main{
     margin: 20px auto 20px auto;
 }
@@ -14,17 +40,19 @@ img{
 
 
 @media screen and (min-width: 700px) {
+          .flexItem{
+                height:400px;
+          }
         img{
-            width:30%;
             display: inline;
+            width: 30%;
         }
-        .vertical{
-          width:10%;
-        }
+
 }
 
-@media screen and (min-width: 1000px) {
-  .vertical{
-    width:30%;
+@media screen and (min-width: 1600px) {
+  .flexItem{
+    flex-basis: 30%;
+    height: 400px;
   }
 }
