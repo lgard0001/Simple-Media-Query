@@ -1,6 +1,8 @@
 body{
+      background-color:pink;
       padding: 0;
       margin: 0;
+      font-family: Helvetica, sans-serif;
 }
 
 
@@ -25,34 +27,42 @@ nav a:hover{
 }
 
 main{
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
 }
 
+.flexItem{
+        flex-basis: 300px;
+        flex-grow: 2;
+        margin: 2px;
+        background: yellow;
+        padding: 30px;
+}
 
 img{
     width: 100%;
     display: block;
     margin: 1% auto;
-    border:2px solid black;
 }
 
 
 
-
+/* medium screen size below */
 @media screen and (min-width: 700px) {
-          .flexItem{
-                height:400px;
-          }
+
         img{
             display: inline;
             width: 30%;
         }
 
 }
+/* large screen styles below */
+@media screen and (min-width: 1300px) {
 
-@media screen and (min-width: 1600px) {
-  .flexItem{
-    flex-basis: 30%;
-    height: 400px;
+    img{
+      display: none;
+      }
+
   }
-}
