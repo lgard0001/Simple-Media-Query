@@ -7,19 +7,11 @@ body{
       font-family: Helvetica, sans-serif;
 }
 
-
-#logo {
-  /* ------ Max width to keep logo image from being larger than intended ------ */
-      max-width: 100%;
-      @ -96,8 +117,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("
-}
-
-
 nav{
     background: grey;
     /* height: 60px; */
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 nav a{
@@ -34,12 +26,14 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
-
-main{
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
+/* Styles for hero or feature */
+.hero{
+    background-image: url(img/hair-hero.jpg);
+    height: 600px;
+    background-size:cover;
+    background-position: right;
+    /* Styles for text and button */
+    position: relative;
 }
 
 .flexItem{
@@ -50,23 +44,38 @@ main{
         padding: 30px;
 }
 
-img{
-    width: 100%;
-    display: block;
-    margin: 1% auto;
+.hero h2{
+    font-family: Georgia, "Times New Roman", serif;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
 }
 
+button{
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
 
-
+main{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
 /* medium screen size below */
 @media screen and (min-width: 700px) {
+      .logo{
+         width: 350px;
+      }
 
-        img{
-            display: inline;
-            width: 30%;
-        }
+      img{
+          display: inline;
+          width: 30%;
+      }
 
 }
+
 /* large screen styles below */
 @media screen and (min-width: 1300px) {
 
@@ -75,3 +84,24 @@ img{
       }
 
   }
+
+.logo {
+  /* ------ Max width to keep logo image from being larger than intended ------ */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      max-width: 400px
+      @ -96,8 +117,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("
+}
+
+
+
+
+
+
+/* img{ */
+    /* width: 100%; */
+    /* display: block; */
+    /* margin: 1% auto; */
+}
