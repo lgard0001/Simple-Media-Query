@@ -1,7 +1,7 @@
 
 
 body{
-      background-color:pink;
+      background-color:rgb(255, 153, 187);
       padding: 0;
       margin: 0;
       font-family: Helvetica, sans-serif;
@@ -40,14 +40,14 @@ nav a:hover{
         flex-basis: 300px;
         flex-grow: 2;
         margin: 2px;
-        background: yellow;
+        background: rgba(181, 181, 181, 0.5);
         padding: 30px;
 }
 
 .hero h2{
     font-family: Georgia, "Times New Roman", serif;
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     right: 5%;
 }
 
@@ -55,6 +55,12 @@ button{
     position: absolute;
     bottom:5%;
     right:5%;
+    background: none;
+    padding: 8px;
+    border: 2px black solid;
+    color: black;
+    font-size: 1.3em;
+    border-radius: 5px;
 }
 
 main{
