@@ -8,7 +8,7 @@ body{
 }
 
 nav{
-    background: grey;
+    background: rgba(255, 255, 255, 0.3);
     /* height: 60px; */
     text-align: center;
     font-family: Georgia, "Times New Roman", serif;
@@ -36,11 +36,13 @@ nav a:hover{
     position: relative;
 }
 
+
+
 .flexItem{
         flex-basis: 300px;
-        flex-grow: 2;
-        margin: 2px;
-        background: rgba(181, 181, 181, 0.5);
+        flex-grow: 1;
+        margin: 2px 40px;
+        background: rgba(255, 255, 255, 0.3);
         padding: 30px;
 }
 
@@ -62,7 +64,26 @@ button{
     font-size: 1.3em;
     border-radius: 5px;
 }
+/* STYLES FOR ABOUT HERO */
+.about-hero{
+    background-image: url("img/hair_2.jpg");
+    /* ADD IMAGE NAME ABOVE */
+    height: 600px;
+    background-size:cover;
+    background-position: right;
+    /* Styles for text and button */
+    position: relative;
+}
 
+.about-hero h2{
+    font-family: Georgia, "Times New Roman", serif;
+    color: white;
+    font-size: .9em;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+/* END STYLES FOR ABOUT HERO */
 main{
     margin: 20px auto;
     display: flex;
@@ -80,6 +101,18 @@ main{
           width: 30%;
       }
 
+      .flexItem{
+              /* flex-basis: 300px; */
+              /* flex-grow: 1; */
+              margin: 20px;
+              /* background: rgba(255, 255, 255, 0.3); */
+              /* padding: 30px; */
+      }
+      .flexItem:first-child{
+        margin-right: 0;
+
+      }
+
 }
 
 /* large screen styles below */
@@ -90,6 +123,23 @@ main{
       }
 
   }
+
+footer{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:40px;
+}
+
+footer a{
+    color: white;
+}
+
+footer p{
+    margin: 40px;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.7em;
+    text-align: center;
+}
 
 .logo {
   /* ------ Max width to keep logo image from being larger than intended ------ */
